@@ -4,6 +4,11 @@
 ```
 $ gem install rails
 ```
+rails generate
+```
+$ rails generate controller welcome index
+
+```
 
 
 

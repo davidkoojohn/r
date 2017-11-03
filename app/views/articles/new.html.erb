@@ -1,0 +1,17 @@
+<%= form_for :article, url: articles_path do |f| %>
+
+    <div>
+      <%= f.label :title %>
+      <%= f.text_field :title %>
+    </div>
+
+    <div>
+      <%= f.label :text %>
+      <%= f.text_field :text %>
+    </div>
+
+    <div>
+      <%= f.submit %>
+    </div>
+
+<% end %>

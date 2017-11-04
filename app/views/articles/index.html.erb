@@ -1,1 +1,3 @@
-<h1>articles index</h1>
+<% @articles.each do |article| %>
+    <h1><%= article.title %></h1>
+<% end %>

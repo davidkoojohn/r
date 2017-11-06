@@ -10,8 +10,16 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+
 //= require jquery
-//= require rails-ujs
+//= require jquery_ujs
 //= require turbolinks
 //= require bootstrap-sprockets
-//= require_tree .
+//= require cable
+//= require init
+//= require_directory ./channels
+// require_directory ../../../vendor/assets/javascripts/common
+// require_directory ../../../vendor/assets/javascripts/site
+//= require_directory ./pages
+// require_directory ./components
+// require 'china_city/jquery.china_city'

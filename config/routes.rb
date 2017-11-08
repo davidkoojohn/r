@@ -6,6 +6,10 @@ Rails.application.routes.draw do
   get 'welcome/index'
   root 'welcome#index'
 
+  namespace :api do
+    resources :consumers, only: [:create, :show, :index, :update]
+  end
+
   resources :articles do
     resources :comments
   end

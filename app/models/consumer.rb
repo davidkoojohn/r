@@ -4,6 +4,7 @@
 #
 #  id                     :integer          not null, primary key
 #  phone                  :string           default(""), not null
+#  email                  :string           default(""), not null
 #  encrypted_password     :string           default(""), not null
 #  reset_password_token   :string
 #  reset_password_sent_at :datetime
@@ -26,6 +27,5 @@ class Consumer < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
-         :recoverable, :trackable, :validatable,
-         :authentication_keys => [:phone]
+         :recoverable, :rememberable, :trackable, :validatable
 end

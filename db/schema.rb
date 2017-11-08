@@ -61,6 +61,7 @@ ActiveRecord::Schema.define(version: 20171108053750) do
 
   create_table "consumers", force: :cascade do |t|
     t.string "phone", default: "", null: false
+    t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"

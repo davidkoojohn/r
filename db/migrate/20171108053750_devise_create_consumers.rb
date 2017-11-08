@@ -3,6 +3,7 @@ class DeviseCreateConsumers < ActiveRecord::Migration[5.1]
     create_table :consumers do |t|
       ## Database authenticatable
       t.string :phone,              null: false, default: ""
+      t.string :email,              null: false, default: ""
       t.string :encrypted_password, null: false, default: ""
 
       ## Recoverable

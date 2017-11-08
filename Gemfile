@@ -7,6 +7,7 @@ end
 
 gem 'activeadmin'
 gem 'devise'
+gem 'simple_token_authentication'
 
 gem 'rails', '~> 5.1.4'
 # Use sqlite3 as the database for Active Record
